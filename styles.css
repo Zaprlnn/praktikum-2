@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6B73FF, #000DFF);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px 0; 
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px; 
+    width: 60%; 
+    max-width: 700px; 
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px solid #6B73FF;
+    transition: border 0.3s ease;
+}
+
+.container:hover .profile-pic {
+    border-color: #000DFF;
+}
+
+h2 {
+    font-size: 22px;
+    color: #000DFF;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px; 
+}
+
+a {
+    text-decoration: none;
+    color: #6B73FF;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000DFF;
+}
+
+.content-section {
+    margin-bottom: 15px; 
+    padding: 15px; /
+}
+
+.about, .projects, .contact {
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    padding: 10px; 
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0; 
+}
+
+.contact a, .projects a {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.contact a:hover, .projects a:hover {
+    border-bottom: 2px solid #000DFF;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
